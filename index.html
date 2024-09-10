@@ -10,9 +10,9 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body >
+<body>
 
-    <div id="background" class="container text-center mt-5" >
+    <div id="background" class="container text-center mt-5">
         <div class="row">
             <div class="col">
                 <h1 style="color:#060b10 " class="mt-4 fw-semibold">Number Guessing Game</h1>
@@ -20,32 +20,52 @@
         </div>
         <div id="rowstart" class="row ">
             <div class="col ">
-                <input onclick="btnStart()" style="font-size: large; font-weight: bold; width: 200px; height: 40px;color: #d9e3ec; background-color: #40739e; margin-top: 80px;"  type="button" value="Start">
+                <input onclick="btnStart()"
+                    style="font-size: large; font-weight: bold; width: 200px; height: 40px;color: #d9e3ec; background-color: #40739e; margin-top: 80px;"
+                    type="button" value="Start">
             </div>
         </div>
-        <div id="rowguess"  class="row">
+        <div id="rowguess" class="row">
             <div class="col">
-                <label for="" id="ran-num" style="z-index: 0; font-size: 100px;position: absolute; color: rgb(116, 173, 29); margin-top: 35px; margin-left: 140px;"></label>
-                <img id="rockA"  src="img/rock.png" alt="" style="width: 300px; z-index: 1;">
+                <label for="" id="ran-num"
+                    style="z-index: 0; font-size: 100px;position: absolute; color: rgb(116, 173, 29); margin-top: 35px; margin-left: 140px;"></label>
+                <img id="rockA" src="img/rock.png" alt="" style="width: 300px; z-index: 1;">
                 <h3>guess Number !</h3>
                 <h1 style="font-size: 30px; font-weight: bold;" id="c-num">-</h1>
                 <div class="btn-group m-3">
-                    <input class="btn-group" onclick="Btnclick('1')"  type="button" value="1" style="font-size:larger; font-weight: bold;">
-                    <input class="btn-group" onclick="Btnclick('2')"  type="button" value="2" style="font-size:larger; font-weight: bold;">
-                    <input class="btn-group" onclick="Btnclick('3')"  type="button" value="3" style="font-size:larger; font-weight: bold;">
-                    <input class="btn-group" onclick="Btnclick('4')"  type="button" value="4" style="font-size:larger; font-weight: bold;">
-                    <input class="btn-group" onclick="Btnclick('5')"  type="button" value="5" style="font-size:larger; font-weight: bold;">
-                    <input class="btn-group" onclick="Btnclick('6')"  type="button" value="6" style="font-size:larger; font-weight: bold;">
-                    <input class="btn-group" onclick="Btnclick('7')"  type="button" value="7" style="font-size:larger; font-weight: bold;">
-                    <input class="btn-group" onclick="Btnclick('8')"  type="button" value="8" style="font-size:larger; font-weight: bold;">
-                    <input class="btn-group" onclick="Btnclick('9')"  type="button" value="9" style="font-size:larger; font-weight: bold;">
-                    <input class="btn-group" onclick="Btnclick('10')"  type="button" value="10" style="font-size:larger; font-weight: bold;">
+                    <input class="btn-group" onclick="Btnclick('1')" type="button" value="1"
+                        style="font-size:larger; font-weight: bold;">
+                    <input class="btn-group" onclick="Btnclick('2')" type="button" value="2"
+                        style="font-size:larger; font-weight: bold;">
+                    <input class="btn-group" onclick="Btnclick('3')" type="button" value="3"
+                        style="font-size:larger; font-weight: bold;">
+                    <input class="btn-group" onclick="Btnclick('4')" type="button" value="4"
+                        style="font-size:larger; font-weight: bold;">
+                    <input class="btn-group" onclick="Btnclick('5')" type="button" value="5"
+                        style="font-size:larger; font-weight: bold;">
+                    <input class="btn-group" onclick="Btnclick('6')" type="button" value="6"
+                        style="font-size:larger; font-weight: bold;">
+                    <input class="btn-group" onclick="Btnclick('7')" type="button" value="7"
+                        style="font-size:larger; font-weight: bold;">
+                    <input class="btn-group" onclick="Btnclick('8')" type="button" value="8"
+                        style="font-size:larger; font-weight: bold;">
+                    <input class="btn-group" onclick="Btnclick('9')" type="button" value="9"
+                        style="font-size:larger; font-weight: bold;">
+                    <input class="btn-group" onclick="Btnclick('10')" type="button" value="10"
+                        style="font-size:larger; font-weight: bold;">
                 </div>
                 <hr>
                 <label for="" id="lblhint"></label>
             </div>
         </div>
     </div>
+    <center>
+        <input onclick="btntry()" id="btntry"
+            style="font-size: large; font-weight: bold; width: 200px; height: 40px;color: #d9e3ec; background-color: #bb9d1a; margin-top: 10px;"
+            type="button" value="play again">
+    </center>
+
+
 
 
     <script src="app.js"></script>

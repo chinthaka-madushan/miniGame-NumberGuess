@@ -1,5 +1,5 @@
 document.getElementById("rowguess").style.display = "none";
-document.getElementById("rowstart").style.display;
+document.getElementById("btntry").style.display = "none";
 
 let round = 0;
 let guessNumber = 1;
@@ -8,11 +8,13 @@ let randomNumber = Math.floor(Math.random()*10+1);
 function btnStart(){
     document.getElementById("rowstart").style.display = "none";
     document.getElementById("rowguess").style.display = "block";
-    
-
 }
 function Btnclick(guessNum){  
-    document.getElementById("c-num").innerText=guessNum;
+    if(round==0){
+        document.getElementById("c-num").innerText=guessNum;
+    }else{
+        document.getElementById("c-num").innerText+=" , "+guessNum;
+    }
     guessNumber = guessNum;
     round++;
     resalt();
@@ -31,6 +33,7 @@ function resalt(){
         document.body.style.backgroundColor='#2ECC71';
         document.getElementById("lblhint").innerText = "💎💎💎 WInner 💎💎💎 NUMBER MATCHING"; 
         rockf();
+        disablebtn();
     }else{
        
         switch(round){
@@ -53,9 +56,8 @@ function resalt(){
 function rockf(){
     document.getElementById("ran-num").innerText = randomNumber;
     document.getElementById("rockA").style.marginLeft = "190px";
-
+    document.getElementById("btntry").style.display = "block";
 }
-function re(){
-    document.getElementById("rowstart").style.display = "none";
-    document.getElementById("rowguess").style.display = "block";
+function btntry(){
+    location.reload();
 }
